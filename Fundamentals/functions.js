@@ -7,11 +7,11 @@ let y = 5;
 
 // function with return statment
 function add(x,y){
-    return x+y;
+    return x+y;  
 }
 
 
-// console.log(add(x,y));
+// console.log(add(x,y)); // undefined
 
 // function without return statment
 
@@ -57,19 +57,57 @@ console.log(AcessName()); // undefined
 
 
 // we can store a function in avariable also
-  let sayHi = function() {
-    console.log( "Hello" );
-  };
+  // let sayHi = function() {
+  //   console.log( "Hello" );
+  // };
+  function sayHi(msg){
+      return msg;
+  }
   
-console.log( sayHi() ); // shows the function code
+console.log( sayHi('Hello') ); // shows the function code
 
 
 // functions are hoisted in javascript if you call a function before declaration 
 //it will also give the expected value rather than giving undefine
 
 
-function showName(name){
-    console.log(name);
+function showName(name){  
+    return this.name;
 }
 
-console.log(showName('manoj'));
+console.log(showName('Priti'));
+
+
+// Arrow Function
+
+// const addNum = (x,y)=>{
+//   return x + y;
+// }
+
+const addNum = (x,y) => x+y;
+
+console.log(addNum(3,4));
+
+
+
+
+class person{
+   name= this.name;
+   age= this.age;
+  
+}
+
+let person1 = new person('jjjj',5)
+let person2 = new person('ooo',9)
+
+
+
+
+
+
+
+
+
+
+
+
