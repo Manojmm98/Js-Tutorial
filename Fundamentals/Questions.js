@@ -24,3 +24,21 @@ function add(x,y){
 }
 
 // arrow function
+
+// Create an empty object user.
+// Add the property name with the value John.
+// Add the property surname with the value Smith.
+// Change the value of the name to Pete.
+// his city bbsr
+// Remove the property name from the object.
+
+const user ={
+    name:'jhon',
+    surname: 'smith',
+    'his city' : 'bbsr',
+
+}
+
+user.name = 'pete';
+delete user.name;
+user['his city'] // to acess his city property
